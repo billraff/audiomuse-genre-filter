@@ -21,6 +21,13 @@ It runs on the stock AudioMuse-AI image, so you don't need a custom build.
   and so on). Your own playlists are never read or changed.
 - **It doesn't affect Instant Mix** or other similar-song features. Those come from the
   Navidrome plugin and AudioMuse's live analysis, not from these playlists.
+- **The Clustering page's "Fetch Playlists" list goes stale after a filter run.** That
+  panel reads AudioMuse's own `playlist` table in Postgres, which is written once when a
+  clustering run finishes and is never refreshed from Navidrome afterward. Since this
+  plugin edits the Navidrome playlists directly over the Subsonic API, Navidrome ends up
+  correct immediately, but Fetch Playlists (and anything else reading that table) keeps
+  showing the original, unfiltered track list until the next clustering run rewrites it.
+  This is expected, not a bug in either project.
 - **It supports Navidrome only for now.** Jellyfin, Emby, Plex and Lyrion servers are
   skipped with a log line.
 
