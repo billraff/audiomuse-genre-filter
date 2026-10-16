@@ -8,7 +8,9 @@
       "version": "0.1.0",
       "min_core_version": "3.2.0",
       "changelog": "First release: genre checklist from Navidrome, album/path patterns, preview and apply modes, optional removal of playlists left too small, run log.",
-      "imageUrl": ""
+      "imageUrl": "",
+      "sourceUrl": "https://raw.githubusercontent.com/billraff/audiomuse-genre-filter/main/dist/playlist_genre_filter/playlist_genre_filter_0.1.0.zip",
+      "checksum": "c8c7a08a09d651878e5a68eed33e3b96"
     }
   ]
 }
