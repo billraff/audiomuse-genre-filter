@@ -432,5 +432,5 @@ def settings():
 def register(ctx):
     ctx.on_install(migrate)
     ctx.add_blueprint(bp)
-    ctx.add_menu_item("Playlist Genre Filter", f"{PLUGIN_ID}.settings", admin_only=True)
+    ctx.add_menu_item("Playlist Genre Filter", f"{PLUGIN_ID}.home", admin_only=True)
     ctx.add_cron_task(TASK_NAME, filter_playlists)
