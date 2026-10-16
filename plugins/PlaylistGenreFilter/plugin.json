@@ -5,6 +5,12 @@
   "description": "Removes tracks of genres you choose (for example Christmas or Classical), or whose album title or file path matches a word you choose, from the playlists clustering creates. Navidrome only for now. Runs on a schedule or on demand, with a preview mode.",
   "versions": [
     {
+      "version": "0.1.1",
+      "min_core_version": "3.2.0",
+      "changelog": "Show the plugin in the sidebar (menu item no longer points at the settings endpoint, which core hides).",
+      "imageUrl": ""
+    },
+    {
       "version": "0.1.0",
       "min_core_version": "3.2.0",
       "changelog": "First release: genre checklist from Navidrome, album/path patterns, preview and apply modes, optional removal of playlists left too small, run log.",
